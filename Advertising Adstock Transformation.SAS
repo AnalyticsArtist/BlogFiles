@@ -14,10 +14,10 @@
 
 ** Create Data;
 data advertising;
-	format Week 8. advertising 8.3;
+    format Week 8. advertising 8.3;
 
-	Week = _N_;
-	input advertising @@;
+    Week = _N_;
+    input advertising @@;
 
 datalines;
 117.913 120.112 125.828 115.354 177.090 141.647 137.892   0.000   0.000   0.000   0.000 
@@ -30,7 +30,7 @@ run;
 
 ** Calculate Adstock;
 data Advertising;
-	set Advertising;
+    set Advertising;
 
     format advertising_adstock 8.2;
 
